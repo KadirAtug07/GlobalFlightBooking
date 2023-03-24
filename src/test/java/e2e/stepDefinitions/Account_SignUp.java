@@ -21,19 +21,26 @@ public class Account_SignUp extends CommonMethods {
         Assert.assertEquals(expectSearchFlightText,homePage.getSearchFlightText());
     }
     @Then("User clicks signup button and verifies signup page header as {string}")
-    public void user_clicks_signup_button_and_verifies_signup_page_header_as(String string) {
-
+    public void user_clicks_signup_button_and_verifies_signup_page_header_as(String signUpHeader) {
+       accountPage.setSignUpButton();
+       Assert.assertEquals(signUpHeader,accountPage.signUpText());
     }
     @Then("User fills up signup form")
     public void user_fills_up_signup_form() {
-
+        accountPage.setFirstName();
+        accountPage.setLastName();
+        accountPage.setEmail();
+        accountPage.setPhoneNumber();
+        accountPage.setPassword();
+        accountPage.setRepeatPassword();
+        accountPage.setGender();
     }
     @Then("User clicks signup button")
     public void user_clicks_signup_button() {
-
+     accountPage.setSignUp();
     }
     @Then("User verify success message as {string}")
-    public void user_verify_success_message_as(String string) {
-
+    public void user_verify_success_message_as(String expectedUserSuccessText) {
+        Assert.assertEquals(expectedUserSuccessText,accountPage.setAlertMessage());
     }
 }

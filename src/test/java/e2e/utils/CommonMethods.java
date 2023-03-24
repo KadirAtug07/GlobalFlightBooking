@@ -6,8 +6,11 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
@@ -68,4 +71,16 @@ public class CommonMethods extends PageInitializer {
         }
         return picBytes;
     }
+    public static WebDriverWait getWait() {
+        WebDriverWait wait = new WebDriverWait(driver,Constants.explicit_wait);
+        return wait;
+    }
+    public static void waitForClick(WebElement element) {
+        getWait().until(ExpectedConditions.elementToBeClickable(element));
+    }
+    public static void click(WebElement element) {
+        waitForClick(element);
+        element.click();
+    }
+
 }

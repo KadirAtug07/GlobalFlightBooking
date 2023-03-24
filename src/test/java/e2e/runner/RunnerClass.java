@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         tags = "@smoke",
         dryRun = false,
         plugin = {
-                "pretty", "html:target/cucumber.html","json:target/cucumber.json","rerun:target/failed.text"
+                "pretty", "html:target/default-cucumber-reports.html","json:target/cucumber.json","rerun:target/failed.text"
         }
 )
 
