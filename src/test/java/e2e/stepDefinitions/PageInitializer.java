@@ -1,9 +1,6 @@
 package e2e.stepDefinitions;
 
-import e2e.pages.AccountPage;
-import e2e.pages.DataBase;
-import e2e.pages.HomePage;
-import e2e.pages.LoginPage;
+import e2e.pages.*;
 import io.cucumber.java.an.Dada;
 
 public class PageInitializer {
@@ -15,6 +12,8 @@ public class PageInitializer {
 
     public static DataBase dataBase;
 
+    public static APIWorkFlow apiWorkFlow;
+
 
 
     public static void initializeObjects() {
@@ -22,5 +21,6 @@ public class PageInitializer {
         homePage=new HomePage();
         loginPage= new LoginPage();
         dataBase=new DataBase();
+        apiWorkFlow= new APIWorkFlow();
     }
 }

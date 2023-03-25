@@ -34,3 +34,17 @@ Feature: Sign-Up and Login
         Then User clicks signup button
         And User verify success message as "User Created"
         Then Verify User is created in Database
+
+       @smoke3
+       Scenario: SignUp with API
+         Given User add request Payload
+         When User send request
+         Then User verifies status code is 201
+
+
+         @smoke4
+         Scenario: SignUp with API and login with UI
+           Given User add request Payload
+           When User send request
+           Then User verifies status code is 201
+           Then User login with UI by given credentials from API
