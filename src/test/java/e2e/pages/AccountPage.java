@@ -49,6 +49,11 @@ public class AccountPage extends CommonMethods {
     private WebElement alertMessage;
     @FindBy(xpath = "//div[contains(text(),'Minimum eight characters, at least one uppercase letter, one lowercase letter, one number ')]")
     private WebElement wrongPassword;
+    @FindBy(partialLinkText = "Login")
+    private WebElement loginButtonOnHeader;
+    @FindBy(css = ".btn.btn-primary.mt-2")
+    private WebElement loginButtonOnBottom;
+
 
      public void setSignUpButton() {
          signUpButton.click();
@@ -69,7 +74,7 @@ public class AccountPage extends CommonMethods {
          email.sendKeys(userEmail);
       }
       public void setPhoneNumber() {
-         userPhoneNumber=faker.phoneNumber().cellPhone();
+         userPhoneNumber=faker.phoneNumber().cellPhone().replace("-","");
          phoneNumber.sendKeys(userPhoneNumber);
       }
 
@@ -106,6 +111,21 @@ public class AccountPage extends CommonMethods {
          return alertMessage.getText();
 
       }
+      public void setLoginButtonOnHeader() {
+         click(loginButtonOnHeader);
+      }
+      public void setValidCredentials() {
+         email.sendKeys(userEmail);
+         password.sendKeys(userPassword);
+      }
+      public void setLoginButtonOnBottom() {
+         click(loginButtonOnBottom);
+      }
+
+      public void verifyAccountName() {
+         Assert.assertEquals(loginPage.setAccountName(),userName);
+      }
+
 
 
 

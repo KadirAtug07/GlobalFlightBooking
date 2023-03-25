@@ -4,22 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a8dc996-3459-404b-8372-c4f90aa331ff" name="Changes" comment="commit1">
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-07-45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-08-46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-10-05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-11-18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-13-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-15-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-19-17.png" afterDir="false" />
+    <list default="true" id="5a8dc996-3459-404b-8372-c4f90aa331ff" name="Changes" comment="commit2">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/passed/Verify Signup in Database 2023-03-24-21-03-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/pages/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/Account_Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/Account_SignUp_Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/utils/DBUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Sign-Up 2023-03-24-15-07-38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-07-45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-08-46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-10-05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-11-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-13-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-15-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-19-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Sign-Up 2023-03-24-19-21-39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Sign-Up 2023-03-24-19-23-43.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2e/pages/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/pages/AccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2e/runner/RunnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/runner/RunnerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/Account_SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/Account_SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/utils/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/stepDefinitions/PageInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/Configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Account.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Account.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +65,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.RunnerClass">
@@ -112,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679612875160</updated>
-      <workItem from="1679612876654" duration="15847000" />
+      <workItem from="1679612876654" duration="21709000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1679684893842</created>
@@ -121,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679684893842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit2">
+      <created>1679700332675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679700332675</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +156,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
+    <MESSAGE value="commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit2" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
